@@ -44,50 +44,31 @@ python agent.py
 
 ```
 
-
-
 ## 🧠 Implementation Logic
 
 The agent was built using **Object-Oriented Programming (OOP)** for better modularity and scalability. The workflow follows these steps:
 
 1. **Intent Classification**: Every user input is first processed by the `phi3` model to determine if it requires a mathematical calculation (`MATH`) or a general response (`GENERAL`).
 
-
 2. **Dynamic Routing**:
-*
-**If GENERAL**: The model answers directly using its internal knowledge.
-
-*
-**If MATH**: The agent triggers a two-step process:
-* **Extraction**: A strict prompt forces the model to extract only the raw numbers and operators (e.g., "128*46").
+* **If GENERAL**: The model answers directly using its internal knowledge.
+* **If MATH**: The agent triggers a two-step process:
+* * **Extraction**: A strict prompt forces the model to extract only the raw numbers and operators (e.g., "128*46").
 * **Tool Execution**: A Python-based `_calculator_tool` cleans the expression using Regex and calculates the exact result using `eval()`, ensuring the precision required by the challenge.
-
 
 
 ## 💡 What I Learned
 
-* 
-**Model Constraints**: Working with smaller local models like `phi3` showed that prompt engineering must be very specific. Initially, the model tried to solve math problems internally (often incorrectly). I solved this by implementing strict instructions to ensure it only performs extraction.
+* **Model Constraints**: Working with smaller local models like `phi3` showed that prompt engineering must be very specific. Initially, the model tried to solve math problems internally (often incorrectly). I solved this by implementing strict instructions to ensure it only performs extraction.
 
-
-* 
-**Local LLMs**: Integrating Ollama into a Python workflow provided insights into running AI applications locally, avoiding the need for paid cloud APIs.
-
+* **Local LLMs**: Integrating Ollama into a Python workflow provided insights into running AI applications locally, avoiding the need for paid cloud APIs.
 
 
 ## 🛠️ Future Improvements
+* **Enhanced Security**: Replace `eval()` with a safer library like `sympy` to prevent potential code injection.
 
-* 
-**Enhanced Security**: Replace `eval()` with a safer library like `sympy` to prevent potential code injection.
+* **Advanced Tools**: Add more "superpowers" like consulting public APIs for weather or news.
 
-
-* 
-**Advanced Tools**: Add more "superpowers" like consulting public APIs for weather or news.
-
-
-* 
-**Memory**: Implement conversation history so the agent can maintain context across multiple turns.
-
-
+* **Memory**: Implement conversation history so the agent can maintain context across multiple turns.
 
 ```
