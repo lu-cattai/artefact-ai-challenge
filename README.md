@@ -50,26 +50,17 @@ python agent.py
 
 The agent was built using **Object-Oriented Programming (OOP)** for better modularity and scalability. The workflow follows these steps:
 
-1. 
-**Intent Classification**: Every user input is first processed by the `phi3` model to determine if it requires a mathematical calculation (`MATH`) or a general response (`GENERAL`).
+1. **Intent Classification**: Every user input is first processed by the `phi3` model to determine if it requires a mathematical calculation (`MATH`) or a general response (`GENERAL`).
 
 
 2. **Dynamic Routing**:
-* 
+*
 **If GENERAL**: The model answers directly using its internal knowledge.
 
-
-* 
+*
 **If MATH**: The agent triggers a two-step process:
-
-
 * **Extraction**: A strict prompt forces the model to extract only the raw numbers and operators (e.g., "128*46").
-* 
-**Tool Execution**: A Python-based `_calculator_tool` cleans the expression using Regex and calculates the exact result using `eval()`, ensuring the precision required by the challenge.
-
-
-
-
+* **Tool Execution**: A Python-based `_calculator_tool` cleans the expression using Regex and calculates the exact result using `eval()`, ensuring the precision required by the challenge.
 
 
 
