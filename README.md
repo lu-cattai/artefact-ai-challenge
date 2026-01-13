@@ -10,7 +10,7 @@ This repository contains my solution for the AI Engineer Junior technical challe
 - **Phi-3 Model**: Run the following command in your terminal to download the model:
   ```bash
   ollama run phi3
-
+  ```
 
 
 ### Installation & Execution
@@ -53,8 +53,8 @@ The agent was built using **Object-Oriented Programming (OOP)** for better modul
 2. **Dynamic Routing**:
 * **If GENERAL**: The model answers directly using its internal knowledge.
 * **If MATH**: The agent triggers a two-step process:
-* * **Extraction**: A strict prompt forces the model to extract only the raw numbers and operators (e.g., "128*46").
-* **Tool Execution**: A Python-based `_calculator_tool` cleans the expression using Regex and calculates the exact result using `eval()`, ensuring the precision required by the challenge.
+  * **Extraction**: A strict prompt forces the model to extract only the raw numbers and operators (e.g., "128*46").
+  * **Tool Execution**: A Python-based `_calculator_tool` cleans the expression using Regex and calculates the exact result using `eval()`, ensuring the precision required by the challenge.
 
 
 ## 💡 What I Learned
@@ -70,5 +70,3 @@ The agent was built using **Object-Oriented Programming (OOP)** for better modul
 * **Advanced Tools**: Add more "superpowers" like consulting public APIs for weather or news.
 
 * **Memory**: Implement conversation history so the agent can maintain context across multiple turns.
-
-```
