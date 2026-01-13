@@ -17,8 +17,8 @@ This repository contains my solution for the AI Engineer Junior technical challe
 
 1. **Clone this repository**:
 ```bash
-git clone [https://github.com/lu-cattai/artefact-ai-challenge.git](https://github.com/lu-cattai/artefact-ai-challenge.git)
-cd YOUR_REPO_NAME
+git clone https://github.com/lu-cattai/artefact-ai-challenge.git
+cd artefact-ai-challenge
 
 ```
 
