@@ -11,7 +11,7 @@ This repository contains my solution for the AI Engineer Junior technical challe
   ```bash
   ollama run phi3
 
-```
+
 
 ### Installation & Execution
 
