@@ -1,13 +1,13 @@
 # Artefact Technical Challenge - AI Agent Junior
 
-[cite_start]This repository contains my solution for the AI Engineer Junior technical challenge[cite: 1]. [cite_start]The goal was to build an AI Assistant that can distinguish between general knowledge questions and mathematical calculations, routing them to the appropriate execution path[cite: 14, 16].
+This repository contains my solution for the AI Engineer Junior technical challenge. The goal was to build an AI Assistant that can distinguish between general knowledge questions and mathematical calculations, routing them to the appropriate execution path.
 
 ## 🚀 How to Run
 
 ### Prerequisites
 - **Python 3.8+**
-- [cite_start]**Ollama**: [Download and install Ollama](https://ollama.com/) [cite: 26]
-- [cite_start]**Phi-3 Model**: Run the following command in your terminal to download the model[cite: 43]:
+- **Ollama**: [Download and install Ollama](https://ollama.com/)
+- **Phi-3 Model**: Run the following command in your terminal to download the model:
   ```bash
   ollama run phi3
 
